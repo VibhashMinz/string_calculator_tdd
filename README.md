@@ -31,3 +31,7 @@ This defines the API and behavior before any implementation.
 ✅ Red Phase:
 
 - Added test: input "1,2" should return 3.
+
+✅ Green Phase:
+
+- Split input string by comma and summed all values.
