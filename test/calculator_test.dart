@@ -16,4 +16,9 @@ void main() {
     final calc = StringCalculator();
     expect(calc.add('1,2'), 3);
   });
+
+  test('supports newline as delimiter', () {
+    final calc = StringCalculator();
+    expect(calc.add('1\n2,3'), 6);
+  });
 }

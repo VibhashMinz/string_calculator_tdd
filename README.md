@@ -35,3 +35,7 @@ This defines the API and behavior before any implementation.
 ✅ Green Phase:
 
 - Split input string by comma and summed all values.
+
+✅ Red Phase:
+
+- Added test to support newline `\n` as an additional delimiter.
