@@ -27,3 +27,7 @@ This defines the API and behavior before any implementation.
 
 - Parsed input string using `int.parse`.
 - Now handles empty or single number inputs.
+
+✅ Red Phase:
+
+- Added test: input "1,2" should return 3.
