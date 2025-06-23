@@ -39,3 +39,7 @@ This defines the API and behavior before any implementation.
 ✅ Red Phase:
 
 - Added test to support newline `\n` as an additional delimiter.
+
+✅ Green Phase:
+
+- Used regex `[,\n]` to support both comma and newline delimiters.
