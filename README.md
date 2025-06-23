@@ -18,3 +18,7 @@ This defines the API and behavior before any implementation.
 
 - Created `StringCalculator` class and `add()` method.
 - Test passes with hardcoded `return 0`.
+
+✅ Red Phase:
+
+- Added test: input "5" should return 5.

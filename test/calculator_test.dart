@@ -6,4 +6,9 @@ void main() {
     final calc = StringCalculator();
     expect(calc.add(''), 0);
   });
+
+  test('returns number itself for single input', () {
+    final calc = StringCalculator();
+    expect(calc.add('5'), 5);
+  });
 }
