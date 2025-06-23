@@ -22,3 +22,8 @@ This defines the API and behavior before any implementation.
 ✅ Red Phase:
 
 - Added test: input "5" should return 5.
+
+✅ Green Phase:
+
+- Parsed input string using `int.parse`.
+- Now handles empty or single number inputs.
