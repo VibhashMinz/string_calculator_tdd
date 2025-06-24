@@ -26,4 +26,9 @@ void main() {
     final calc = StringCalculator();
     expect(calc.add('//;\n1;2'), 3);
   });
+
+  test('throws exception when negative numbers are present', () {
+    final calc = StringCalculator();
+    expect(() => calc.add('1,-2,-4'), throwsA(predicate((e) => e.toString().contains('negative numbers not allowed -2,-4'))));
+  });
 }

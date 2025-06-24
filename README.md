@@ -51,3 +51,7 @@ This defines the API and behavior before any implementation.
 ✅ Green Phase:
 
 - Added support for custom delimiter defined by `//<delimiter>\n`.
+
+✅ Red Phase:
+
+- Added test to throw exception with all negative numbers listed.
