@@ -13,7 +13,19 @@ class StringCalculator {
     }
 
     final regex = RegExp(delimiters.map(RegExp.escape).join('|'));
-    final tokens = numberString.split(regex);
-    return tokens.map(int.parse).reduce((a, b) => a + b);
+    final tokens = numberString.split(regex).where((e) => e.isNotEmpty);
+
+    final negatives = [];
+    final sum = tokens.fold<int>(0, (acc, val) {
+      final n = int.parse(val);
+      if (n < 0) negatives.add(n);
+      return acc + n;
+    });
+
+    if (negatives.isNotEmpty) {
+      throw Exception('negative numbers not allowed ${negatives.join(",")}');
+    }
+
+    return sum;
   }
 }

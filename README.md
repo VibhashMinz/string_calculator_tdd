@@ -55,3 +55,7 @@ This defines the API and behavior before any implementation.
 ✅ Red Phase:
 
 - Added test to throw exception with all negative numbers listed.
+
+✅ Green Phase:
+
+- If input contains negative numbers, throw exception listing them all.
