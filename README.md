@@ -47,3 +47,7 @@ This defines the API and behavior before any implementation.
 ✅ Red Phase:
 
 - Added test for custom delimiter syntax using `//;\n1;2`
+
+✅ Green Phase:
+
+- Added support for custom delimiter defined by `//<delimiter>\n`.
