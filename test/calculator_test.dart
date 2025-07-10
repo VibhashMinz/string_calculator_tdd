@@ -31,4 +31,12 @@ void main() {
     final calc = StringCalculator();
     expect(() => calc.add('1,-2,-4'), throwsA(predicate((e) => e.toString().contains('negative numbers not allowed -2,-4'))));
   });
+
+  ///if the custome delimeter is * than instead of sum do multiplication
+
+  test('Custom delimiter * for multiplication', () {
+    final calc = StringCalculator();
+
+    expect(calc.add("//*\n2*4"), equals(8));
+  });
 }
